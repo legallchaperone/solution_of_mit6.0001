@@ -1,0 +1,65 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "conventional-changelog-cli": "^5.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0"
+  },
+  "name": "solution_of_mit6.0001",
+  "version": "1.0.0",
+  "description": "This repository contains my solutions to assignments from MIT's 6.0001 course - \"Introduction to Computer Science and Programming in Python\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        72
+      ],
+      "type-enum": [
+        2,
+        "always",
+        [
+          "feat",
+          "fix",
+          "docs",
+          "style",
+          "refactor",
+          "test",
+          "chore",
+          "perf",
+          "ci"
+        ]
+      ],
+      "scope-empty": [
+        2,
+        "never"
+      ],
+      "subject-full-stop": [
+        2,
+        "never",
+        "."
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legallchaperone/solution_of_mit6.0001.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/legallchaperone/solution_of_mit6.0001/issues"
+  },
+  "homepage": "https://github.com/legallchaperone/solution_of_mit6.0001#readme"
+}

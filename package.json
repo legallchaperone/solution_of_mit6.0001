@@ -37,7 +37,9 @@
           "test",
           "chore",
           "perf",
-          "ci"
+          "ci",
+          "revert",
+          "build"
         ]
       ],
       "scope-empty": [
